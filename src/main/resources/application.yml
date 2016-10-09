@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+#TODO: figure out why I need this here and in bootstrap.yml
+spring:
+  application:
+    name: testLatticeApp
+
+ribbon:
+  ServerListRefreshInterval: 1000
+
+endpoints:
+  health:
+    sensitive: false
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+    
+spring.social.twitter.appId: ogIANEpF2RkLxvHrzO0Cu5sVi
+spring.social.twitter.appSecret: UbOselGMS6lmGQrey3NsjxO231UzWfOG8akh7Nhc6wbbxtBMQE
+
+
